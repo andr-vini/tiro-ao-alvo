@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Jogo da memória</title>
+</head>
+<body>
+    <div>
+        <div id="conteudo">
+            <div id="form_user" style="display:none;">
+                <label for="nome">Seu nome: </label>
+                <input id="nome" type="text">
+                <button onclick="addHistorico()">Gravar</button>
+            </div>
+            <h2>Tiro ao alvo</h2>
+            <div>
+                <p>Parciais:</p>
+                <p id="parcial">Acertos: <span id="acertos">0</span>/ <span id="total">0</span> </p>
+                <p id="relogio">Relógio: 00:10</p>
+            </div>
+            
+            <main>
+                <div id="cenario">
+                    <img id="alvo" src="img/bmo.png" alt="" >
+                </div>
+            </main>
+
+            <button onclick="iniciar()">Iniciar jogo</button>
+            <button onclick="parar()">Cancelar jogo</button>
+            <div>
+                <p>histórico</p>
+                <div id="historico"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

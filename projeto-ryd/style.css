@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+body > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#cenario{
+    background-image: url('img/cenario.jpg');
+    background-size: 700px 400px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alvo{
+    position: relative;
+    width: 50px;
+    z-index: 30;
+}
+#conteudo{
+    text-align: center;
+}
